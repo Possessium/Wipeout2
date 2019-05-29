@@ -5,7 +5,7 @@ using UnityEngine;
 public class WT_Car : MonoBehaviour
 {
     #region Fields
-    [SerializeField] WT_CarCharacteristics carCharacteristics;
+    [SerializeField] WT_CarCharacteristics carCharacteristics = new WT_CarCharacteristics();
         public WT_CarCharacteristics CarCharacteristics { get { return carCharacteristics; } }
     #endregion
 

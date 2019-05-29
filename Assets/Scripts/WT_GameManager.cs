@@ -36,17 +36,24 @@ public class WT_GameManager : MonoBehaviour
         CurrentGameMode = _mode;
         OnGameModeChange?.Invoke(_mode);
     }
+
     void GameManagerBehaviour()
     {
         switch (CurrentGameMode)
         {
             case GameMode.Play:
+                Timer();
                 break;
             case GameMode.Pause:
                 break;
             case GameMode.Menu:
                 break;
         }
+    }
+
+    void Timer()
+    {
+        timer += Time.deltaTime;
     }
     #endregion
 }
